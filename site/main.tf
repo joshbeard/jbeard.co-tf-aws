@@ -11,6 +11,6 @@ module "jbeard_co_migadu" {
     source = "github.com/joshbeard/tf-migadu-route53.git"
 
     domain        = "jbeard.co"
-    zone_id       = module.jbeard_co_aws.zone_id
+    zone_id       = module.jbeard_co_aws.route53_zone_id
     migadu_verify = "v3jbz5qj"
 }
